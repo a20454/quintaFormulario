@@ -16,10 +16,26 @@ namespace Formulario.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(string nome, int idade)
+        public ActionResult Index(string nome, int? idade)
         {
-            //criar a mensagem de resposta
-            string mensagem = "voce chama se "+nome+" e tem "+idade+" anos.";
+            ///precisamos de validar os dados introduzidos pelo utilizador
+            ///1º questao: o nome é um nome?
+            ///2º questao: a idade esta dentro do parametros pretendidos?
+
+            string mensagem = "";
+
+            //validar a idade
+            if (idade >= 0 && idade <= 120)
+            {
+
+                //criar a mensagem de resposta
+                mensagem = "voce chama se " + nome + " e tem " + idade + " anos.";
+            }
+            else
+            {
+                //mensagem alternativa
+                mensagem = "idade invalida\n"+"entre os 0 e 120 anos";
+            }
             //criar o 'contetor' que levara a mensagem para a view
             ViewBag.oreo = mensagem;
             //invoca a view
