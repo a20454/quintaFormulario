@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @* Formulario para perguntar aos utilizadores
+            -nome
+            -idade
+            e depois fazer aparecer essa informacao no ecra
+        *@
+
+        <h2>o meu formulario super duper hyper extremamente e epitagoricamente simples</h2>
+        <form method="post">
+            qual e o seu nome
+            <input type="text" name="nome" />
+            <br />
+            qual e a idade
+            <input type="number" name="idade" />
+            <br />
+            <input type="submit" name="botao" value="enviar dados" />
+
+        </form>
+
+        @if (ViewBag.oreo != "") // o '@' inicia um pedaco de codigo que sera lido em C#
+        {
+            //etse IF garante que o alert aparece se a 'oreo' tiver algum conteudo
+            <text><!-- agora e lido como um pedaco de texto aka HTML-->
+                <script>
+                alert("@ViewBag.oreo");
+                </script>
+            </text>
+        }
+
+    </div>
+</body>
+</html>
