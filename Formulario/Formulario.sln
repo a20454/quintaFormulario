@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formulario", "Formulario\Formulario.csproj", "{3AAA52C3-E91C-49A7-A02E-C410B1025D85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AAA52C3-E91C-49A7-A02E-C410B1025D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAA52C3-E91C-49A7-A02E-C410B1025D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAA52C3-E91C-49A7-A02E-C410B1025D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAA52C3-E91C-49A7-A02E-C410B1025D85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E8B2A6A-4401-4D72-A672-81BD349E270D}
+	EndGlobalSection
+EndGlobal
